@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contabancaria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="68dp"
+        android:text="@string/conta_banc_ria"
+        android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title"
+        app:layout_constraintBottom_toTopOf="@+id/idUsuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/idUsuario"
+        android:layout_width="297dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="448dp"
+        android:ems="10"
+        android:hint="@string/usuario"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textColor="#3A1779"
+        android:textColorHighlight="#3A1779"
+        android:textColorLink="#5124A2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/idSenha"
+        android:layout_width="299dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="@string/senha"
+        android:inputType="textPassword"
+        android:textColor="#3A1779"
+        android:textColorHighlight="#3A1779"
+        android:textColorLink="#3A1779"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUsuario"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="MissingConstraints"
+        android:autofillHints="" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="117dp"
+        android:layout_height="103dp"
+        app:layout_constraintBottom_toTopOf="@+id/contabancaria"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/ic_lock_idle_lock"
+        android:contentDescription="@string/todo" />
+
+    <Button
+        android:id="@+id/idBtLogin"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:text="@string/entrar"
+        app:backgroundTint="#3A1779"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSenha"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <Button
+        android:id="@+id/idBtRegistrar"
+        android:layout_width="123dp"
+        android:layout_height="50dp"
+        android:text="@string/registrar"
+        app:backgroundTint="#474649"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idBtLogin"
+        app:layout_constraintVertical_bias="0.182" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
